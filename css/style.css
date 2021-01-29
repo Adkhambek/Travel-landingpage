@@ -59,6 +59,11 @@ img{
     background-color: var(--btn-hover);
 }
 
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 /********************************************
  Hero Section:
 *********************************************/
@@ -134,5 +139,62 @@ img{
     color: var(--btn-color);
     border: 1px solid var(--btn-color);
     margin-left: 4rem;
+} 
 
+/********************************************
+ Ticket Section:
+*********************************************/
+
+.ticket{
+    padding: 10rem 0 20rem;
+} 
+
+.ticket__subtitle{
+    width: 48rem;
+    margin: 2rem 0 5.6rem;
+} 
+
+.ticket__demos{
+    display: flex;
+    justify-content: space-between;
+} 
+.ticket__demos .col{
+    width: 55.5rem;
+    height: 63rem;
+    display: flex;
+   
+}
+
+.col .ticket__photo{
+    width: 100%;
+}
+
+.ticket__photo{
+    width: 55.5rem;
+    height: 63rem;
+    position: relative;
+}  
+
+.tickect__image{
+    height: 30rem;
+} 
+
+.ticket__photo_margin{
+    margin-bottom: 3rem;
+}
+
+.tickect__image_large{
+    height: 100%;
+} 
+
+.ticket__demo-link{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2.2rem 4.8rem;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%,50%);
 }
