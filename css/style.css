@@ -1,8 +1,9 @@
-:root{
+:root {
     --btn-color: #38B3F1;
     --btn-hover: #427FF6;
     --footer-color: #000411;
 }
+
 /********************************************
  General Rules:
 *********************************************/
@@ -21,173 +22,187 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-} 
+}
 
 .container {
     width: 1140px;
     margin: 0 auto;
 }
 
-a{
+a {
     text-decoration: none;
     color: #ffffff;
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
 }
 
-h1{
+h1 {
     font-weight: bold;
     font-size: 5rem;
-} 
+}
 
-p{
+h2 {
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+p {
     font-size: 1.6rem;
-} 
+}
 
-img{
+img {
     width: 100%;
-}  
+}
 
-.btn{
+.btn {
     display: inline-block;
     padding: 1.2rem 4.4rem;
     background-color: var(--btn-color);
     transition: background-color .3s ease;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: var(--btn-hover);
 }
 
-.col{
+.col {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 /********************************************
  Hero Section:
 *********************************************/
 
-.hero{
+.hero {
     background-image: url("../images/fly.png");
     background-repeat: no-repeat;
     background-size: cover;
-    
-} 
 
-.nav{
-     padding: 3rem 0;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-} 
-.nav__logo{
-     display: flex;
-     align-items: center;
 }
-.nav__logo__image{
+
+.nav {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo__image {
     height: 5.6rem;
     width: 5.6rem;
-} 
+}
 
-.nav__logo__text{
+.nav__logo__text {
     text-transform: uppercase;
     font-size: 1.9rem;
     font-weight: bold;
-} 
+}
 
-.nav__list{
+.nav__list {
     display: flex;
-} 
+}
 
-.nav__item:not(:last-child){
+.nav__item:not(:last-child) {
     margin-right: 1.5rem;
 }
 
-.nav__link{
-    padding: .5rem 1rem ;
+.nav__link {
+    padding: .5rem 1rem;
     transition: background-color .3s ease;
-} 
+}
 
-.nav__link:hover{
+.nav__link:hover {
     text-shadow: 0 0 2px #ffffff;
-} 
+}
 
-.hero__text{
+.hero__text {
     padding: 15rem 0 18rem;
-} 
+}
 
-.hero__text{
+.hero__text {
     width: 50rem;
     color: #ffffff;
-} 
+}
 
-.hero__subtitle{
+.hero__subtitle {
     margin: 2rem 0 4rem;
 }
 
-.hero__button{
+.hero__button {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1.4rem;
 }
 
-.hero__button_bordered{
+.hero__button_bordered {
     background-color: transparent;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     color: var(--btn-color);
     border: 1px solid var(--btn-color);
     margin-left: 4rem;
-} 
+}
 
 /********************************************
  Ticket Section:
 *********************************************/
 
-.ticket{
+.ticket {
     padding: 10rem 0 20rem;
-} 
+    background-image: url("../images/plane-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 
-.ticket__subtitle{
+}
+
+.ticket__subtitle {
     width: 48rem;
     margin: 2rem 0 5.6rem;
-} 
+}
 
-.ticket__demos{
+.ticket__demos {
     display: flex;
     justify-content: space-between;
-} 
-.ticket__demos .col{
+}
+
+.ticket__demos .col {
     width: 55.5rem;
     height: 63rem;
     display: flex;
-   
+
 }
 
-.col .ticket__photo{
+.col .ticket__photo {
     width: 100%;
 }
 
-.ticket__photo{
+.ticket__photo {
     width: 55.5rem;
     height: 63rem;
     position: relative;
-}  
+}
 
-.tickect__image{
+.tickect__image {
     height: 30rem;
-} 
+}
 
-.ticket__photo_margin{
+.ticket__photo_margin {
     margin-bottom: 3rem;
 }
 
-.tickect__image_large{
+.tickect__image_large {
     height: 100%;
-} 
+}
 
-.ticket__demo-link{
+.ticket__demo-link {
     text-transform: uppercase;
     font-weight: bold;
     padding: 2.2rem 4.8rem;
@@ -196,5 +211,63 @@ img{
     position: absolute;
     bottom: 50%;
     right: 50%;
-    transform: translate(50%,50%);
+    transform: translate(50%, 50%);
+}
+
+/********************************************
+ Space Section:
+*********************************************/
+
+.space {
+    padding: 15rem 0;
+    background-image: url("../images/space-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.space__title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.space__subtitle {
+    width: 56rem;
+    text-align: center;
+    margin: 0 auto 5.5rem;
+}
+
+.space__item_top {
+    margin-bottom: 12rem;
+}
+
+.space__item_reverce {
+    flex-direction: row-reverse;
+}
+
+.space__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.space__item__text {
+    width: 40%;
+}
+
+.space__item__photo {
+    width: 50%;
+}
+
+.space__description {
+    margin: 3rem 0 4rem;
+}
+
+.space__book {
+    display: flex;
+    align-items: center;
+}
+
+.space__book__price {
+    margin-right: 3.3rem;
+    font-size: 1.8rem;
 }
