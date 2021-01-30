@@ -270,4 +270,40 @@ img {
 .space__book__price {
     margin-right: 3.3rem;
     font-size: 1.8rem;
+} 
+
+/********************************************
+ Gallery Section:
+*********************************************/
+
+.gallery{
+    text-align: center;
+    padding: 20rem 0;
+    background-image: url("../images/plane-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+} 
+
+.gallery__list{
+    display: flex;
+    justify-content: space-between;
+} 
+
+.gallery__subtitle{
+    width: 48rem;
+    text-align: center;
+    margin: 3rem auto 6rem;
+} 
+.gallery__item_large{
+    width: 36% !important;
+}
+.gallery__item {
+    width: 29.5%;
+} 
+
+.gallery__photo{
+    display: inline-block;
+    height: 100%;
+    margin-bottom: 3rem;
 }
