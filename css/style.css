@@ -336,4 +336,29 @@ img {
 
 .agency__title{
     margin-bottom: 3rem;
+} 
+
+/********************************************
+ Reward Section:
+*********************************************/
+
+.reward__container{
+    padding: 20rem 0 10rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+} 
+
+.reward__photo{
+    width: 50%;
+    position: relative;
+    left: -16%;
+} 
+
+.reward__text{
+    width: 50%;
+} 
+
+.reward__description{
+    margin: 3rem 0 4rem;
 }
