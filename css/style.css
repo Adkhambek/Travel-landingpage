@@ -361,4 +361,42 @@ img {
 
 .reward__description{
     margin: 3rem 0 4rem;
+} 
+
+/********************************************
+ Footer Section:
+*********************************************/
+
+.footer{
+    background-color: var(--footer-color);
+    color: #ffffff;
+    padding: 23rem 0 17rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+
+} 
+
+.footer__list{
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+} 
+
+.footer__company-name{
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5rem;
+} 
+
+.footer__address{
+    width: 20rem;
+    margin: 3.5rem 0 2.3rem;
+} 
+
+.footer__title{
+    margin-bottom: 3rem;
+} 
+
+.footer__page{
+    margin-bottom: 2rem;
 }
