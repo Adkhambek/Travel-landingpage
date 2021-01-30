@@ -9,7 +9,7 @@
 *********************************************/
 
 html {
-    font-size: 10px;
+    font-size: 12px;
     box-sizing: border-box;
 }
 
@@ -123,7 +123,7 @@ img {
 }
 
 .hero__text {
-    padding: 15rem 0 18rem;
+    padding: 10rem 0 18rem;
 }
 
 .hero__text {
@@ -148,6 +148,10 @@ img {
     color: var(--btn-color);
     border: 1px solid var(--btn-color);
     margin-left: 4rem;
+} 
+
+.toggle-btn{
+    display: none;
 }
 
 /********************************************
@@ -155,7 +159,7 @@ img {
 *********************************************/
 
 .ticket {
-    padding: 10rem 0 20rem;
+    padding: 10rem 0 15rem;
     background-image: url("../images/plane-bg.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -174,10 +178,7 @@ img {
 }
 
 .ticket__demos .col {
-    width: 55.5rem;
-    height: 63rem;
-    display: flex;
-
+    width: 48%;
 }
 
 .col .ticket__photo {
@@ -185,13 +186,8 @@ img {
 }
 
 .ticket__photo {
-    width: 55.5rem;
-    height: 63rem;
+    width: 48%;
     position: relative;
-}
-
-.tickect__image {
-    height: 30rem;
 }
 
 .ticket__photo_margin {
@@ -278,7 +274,7 @@ img {
 
 .gallery{
     text-align: center;
-    padding: 20rem 0;
+    padding: 15rem 0;
     background-image: url("../images/plane-bg.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -343,7 +339,7 @@ img {
 *********************************************/
 
 .reward__container{
-    padding: 20rem 0 10rem;
+    padding: 15rem 0 10rem;
     display: flex;
     align-items: center;
     position: relative;
@@ -370,7 +366,7 @@ img {
 .footer{
     background-color: var(--footer-color);
     color: #ffffff;
-    padding: 23rem 0 17rem;
+    padding: 15rem 0 10rem;
     font-family: 'Lato', sans-serif;
     font-size: 1.8rem;
 
@@ -399,4 +395,165 @@ img {
 
 .footer__page{
     margin-bottom: 2rem;
+} 
+
+/********************************************
+ Responsive:
+*********************************************/
+@media(max-width: 1280px){
+    html {
+        font-size: 11px;
+    }   
+    .container {
+        width: 1060px;
+    }
+}
+@media(max-width: 1200px){
+    html {
+        font-size: 10px;
+    }   
+    .container {
+        width: 1000px;
+    }
+}
+@media(max-width: 1100px){
+    html {
+        font-size: 10px;
+    }   
+    .container {
+        width: 960px;
+    }
+}
+@media(max-width: 980px){
+    html {
+        font-size: 10px;
+    }   
+    .container {
+        width: 860px;
+    }
+}
+@media(max-width: 880px){
+    html {
+        font-size: 9px;
+    }   
+    .container {
+        width: 760px;
+    }
+}
+@media(max-width: 780px){
+    html {
+        font-size: 9px;
+    }   
+    .container {
+        width: 660px;
+    }
+    .nav__list{
+        display: none;
+    }
+    .nav__button{
+        display: none;
+    }
+    .toggle-btn{
+        display: inline-block;
+        padding: 5px;
+        font-size: 30px;
+        background-color: transparent;
+        color: #ffffff;
+        border: none;
+        outline: none;
+    }
+   .hero__text{
+       width: 100%;
+       margin: 0 auto;
+       text-align: center;
+   }
+   .container{
+       text-align: center;
+   }
+   .ticket__subtitle{
+       width: 100%;
+       text-align: center;
+       margin: 20px auto 56px;
+   }
+   .ticket__demos{
+       flex-direction: column;
+   }
+   .ticket__photo{
+    margin-bottom: 3rem;
+   }
+   .ticket__photo, .ticket__demos .col {
+       width: 100%;
+       
+   }
+   .tickect__image{
+        height: 350px;
+        object-fit: fill;
+   }
+   .space__subtitle {
+    width: 100%;
+   }
+   .space__item{
+       flex-direction: column-reverse;
+   }
+   .space__item__text,.space__item__photo{
+       width: 100%;
+   }
+   .space__name{
+       margin: 2rem auto 1.5rem;
+   }
+   .space__book{
+       display: inline-block;
+       margin: 0 auto;
+   }
+   .space__book__price{
+       margin: 0 auto 2rem;
+   }
+   .gallery__item_none{
+       display: none;
+   }
+   .gallery__item,.gallery__item_large{
+       width: 47% !important;
+   }
+   .agency__container{
+       flex-direction: column;
+   }
+   .gallery__subtitle{
+       width: 100%;
+   }
+   .agency__photo, .agency__text{
+       width: 100%;
+   }
+   .agency__title{
+       margin-top: 2rem;
+   }
+   .reward__container{
+       flex-direction: column;
+   }
+   .reward__photo{
+       position: static;
+       width: 100%;
+   }
+   .reward__text{
+       margin-top: 2rem;
+       width: 100%; 
+   }
+
+   .footer__list{
+       flex-direction: column;
+   }
+   .footer__item{
+       margin-bottom: 2rem;
+       width: 100%;
+   }
+   .footer__address{
+       width: 100%;
+   }
+}
+@media(max-width: 680px){
+    html {
+        font-size: 7px;
+    }   
+    .container {
+        width: 90%;
+    }
 }
