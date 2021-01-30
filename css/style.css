@@ -306,4 +306,34 @@ img {
     display: inline-block;
     height: 100%;
     margin-bottom: 3rem;
+} 
+
+/********************************************
+ Agency Section:
+*********************************************/
+
+.agency{
+    padding: 15rem 0;
+    background-image: url("../images/space-bg.png");
+    background-size: contain;
+    background-position: center;
+} 
+
+.agency__container{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+} 
+
+.agency__photo{
+
+    width: 40%;
+} 
+
+.agency__text{
+    width: 50%;
+} 
+
+.agency__title{
+    margin-bottom: 3rem;
 }
